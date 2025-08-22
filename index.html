@@ -31,8 +31,55 @@
 
   <title>healthberry_webpage</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Simple debug logging -->
+  <script>
+    console.log('Flutter web app loading...');
+    
+    // Basic error handling
+    window.addEventListener('error', function(e) {
+      console.error('Global error:', e.error);
+    });
+  </script>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <!-- This script loads the main.dart.js file and initializes Flutter -->
+  <script src="main.dart.js" type="application/javascript"></script>
+  
+  <!-- Simple loading indicator -->
+  <div id="loading" style="
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    z-index: 9999;
+  ">
+    Loading Flutter app...
+  </div>
+  
+  <script>
+    // Hide loading indicator after a reasonable timeout
+    setTimeout(function() {
+      const loading = document.getElementById('loading');
+      if (loading) {
+        loading.style.display = 'none';
+        console.log('Loading indicator hidden');
+      }
+    }, 5000);
+    
+    // Also hide when Flutter is ready (if available)
+    if (window.flutter_inappwebview) {
+      window.addEventListener('flutter-first-frame', function() {
+        const loading = document.getElementById('loading');
+        if (loading) {
+          loading.style.display = 'none';
+          console.log('Flutter app loaded successfully!');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
