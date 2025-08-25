@@ -48,8 +48,12 @@
   "chat_unable_to_load": "Chat-Daten können nicht geladen werden",
   "chat_no_conversations": "Noch keine Gespräche",
   "chat_start_conversation": "Starten Sie ein Gespräch, indem Sie eine Nachricht an den KI-Assistenten senden.",
-  
+  "chat_is_started": "Chat is stated",
+  "chat_input_your_message": "Input your message",
+  "chat_is_connecting": "Chat is connecting",
+
   "users_title": "Benutzerliste",
+  "users_profile": "User Profile",
   "users_from_aws": "Benutzer von AWS Cognito",
   "users_testing_package": "Testen des Benutzerabrufs mit dem amazon_cognito_identity_dart_2 Paket",
   "users_note": "Hinweis: Dieses Paket hat begrenzte Benutzerverwaltungsfunktionen. Sie können möglicherweise nur den aktuell authentifizierten Benutzer sehen.",
@@ -58,7 +62,7 @@
   "users_error_loading": "Fehler beim Laden der Benutzer",
   "users_retry": "Wiederholen",
   "users_no_users_found": "Keine Benutzer gefunden",
-  "users_no_users_subtitle": "Dies ist bei den aktuellen Paketbeschränkungen zu erwarten. Das Paket unterstützt nur den Zugriff auf den aktuellen Benutzer.",
+  "users_no_users_subtitle": "Dies ist bei den aktuellen Paketbeschränusers_profilekungen zu erwarten. Das Paket unterstützt nur den Zugriff auf den aktuellen Benutzer.",
   "users_refresh": "Aktualisieren",
   "users_no_users_match": "Keine Benutzer entsprechen der Suche",
   "users_no_users_match_subtitle": "Versuchen Sie, Ihre Suchanfrage anzupassen",

@@ -2,7 +2,7 @@
   "app_name": "Healthberry",
   "app_coming_soon": "Sắp ra mắt",
   "app_description": "Hành trình sức khỏe và sức khỏe của bạn bắt đầu từ đây. Hãy chờ đợi một trải nghiệm tuyệt vời.",
-  
+
   "auth_login": "Đăng nhập",
   "auth_signup": "Đăng ký",
   "auth_logout": "Đăng xuất",
@@ -14,7 +14,7 @@
   "auth_already_have_account": "Đã có tài khoản?",
   "auth_sign_up_here": "Đăng ký tại đây",
   "auth_login_here": "Đăng nhập tại đây",
-  
+
   "home_welcome": "Chào mừng đến với Healthberry",
   "home_subtitle": "Quản lý hành trình sức khỏe và sức khỏe của bạn",
   "home_dashboard": "Bảng điều khiển",
@@ -26,7 +26,7 @@
   "home_chat_rooms": "Phòng trò chuyện",
   "home_chat_rooms_subtitle": "Cuộc trò chuyện đang hoạt động",
   "home_admin_panel_subtitle": "Quản lý người dùng và hệ thống",
-  
+
   "chat_title": "Trò chuyện",
   "chat_chat_requests": "Yêu cầu trò chuyện",
   "chat_chat_rooms": "Phòng trò chuyện",
@@ -48,9 +48,12 @@
   "chat_unable_to_load": "Không thể tải dữ liệu trò chuyện",
   "chat_no_conversations": "Chưa có cuộc trò chuyện nào",
   "chat_start_conversation": "Bắt đầu cuộc trò chuyện bằng cách gửi tin nhắn đến AI Assistant.",
-  
+  "chat_is_started": "Cuộc trò chuyện đã bắt đầu",
+  "chat_input_your_message": "Nhập tin nhắn của bạn...",
+  "chat_is_connecting": "Đang kết nối...",
+
   "users_title": "Danh sách người dùng",
-  "user_profile": "Hồ sơ người dùng",
+  "users_profile": "Hồ sơ người dùng",
   "users_from_aws": "Người dùng từ AWS Cognito",
   "users_testing_package": "Kiểm tra việc lấy dữ liệu người dùng với gói amazon_cognito_identity_dart_2",
   "users_note": "Lưu ý: Gói này có khả năng quản lý người dùng hạn chế. Bạn chỉ có thể thấy người dùng đang xác thực hiện tại.",

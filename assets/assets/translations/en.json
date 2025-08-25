@@ -48,9 +48,12 @@
   "chat_unable_to_load": "Unable to load chat data",
   "chat_no_conversations": "No conversations yet",
   "chat_start_conversation": "Start a conversation by sending a message to AI Assistant.",
-  
+  "chat_is_started": "Chat is stated",
+  "chat_input_your_message": "Input your message",
+  "chat_is_connecting": "Chat is connecting",
+
   "users_title": "Users List",
-  "user_profile": "User Profile",
+  "users_profile": "User Profile",
   "users_from_aws": "Users from AWS Cognito",
   "users_testing_package": "Testing user retrieval with amazon_cognito_identity_dart_2 package",
   "users_note": "Note: This package has limited user management capabilities. You may only see the current authenticated user.",
