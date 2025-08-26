@@ -40,6 +40,37 @@
     window.addEventListener('error', function(e) {
       console.error('Global error:', e.error);
     });
+    
+    // CORS bypass for development (only for our API)
+    window.addEventListener('DOMContentLoaded', function() {
+      console.log('Setting up CORS bypass for API calls...');
+      
+      // Override fetch to add CORS headers only for our API
+      const originalFetch = window.fetch;
+      window.fetch = function(url, options = {}) {
+        // Only apply CORS bypass to our API endpoints
+        if (typeof url === 'string' && url.includes('47k7tdx24l.execute-api.eu-north-1.amazonaws.com')) {
+          console.log('Intercepted API fetch request:', url);
+          
+          // Add CORS headers for API calls
+          options.mode = 'cors';
+          options.credentials = 'omit';
+          
+          if (!options.headers) {
+            options.headers = {};
+          }
+          
+          // Add standard headers for API
+          options.headers['Access-Control-Allow-Origin'] = '*';
+          options.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS';
+          options.headers['Access-Control-Allow-Headers'] = 'Content-Type, Authorization, X-User-ID, X-User-Email, X-Admin-Role';
+          
+          console.log('Modified API fetch options:', options);
+        }
+        
+        return originalFetch(url, options);
+      };
+    });
   </script>
 </head>
 <body>
